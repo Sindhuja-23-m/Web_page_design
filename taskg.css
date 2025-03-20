@@ -1,0 +1,455 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url('bg2.jpeg'); /* Replace with a suitable background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+      background-image: url("bg2.jpeg");
+    }
+  }
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.actions button {
+    background: none;
+    border: none;
+    color: rgb(32, 31, 31);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    width: 60%;
+    margin-left:40px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.offers {
+    /* background-color: rgba(5, 23, 10, 0.884); */
+    background-color: rgba(13, 53, 25, 0.938);
+    /* background-color: rgba(24, 90, 92, 0.616); */
+    color: rgb(237, 231, 231);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    /* border:2px solid rgba(53, 108, 43, 0.593); */
+    border:2px solid rgba(43, 108, 108, 0.593);
+}
+
+.offers:hover{
+    box-shadow: 6px 6px 4px #11320e;
+}
+
+
+/* Hero Sidebar */
+.hero-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Adds spacing between blocks */
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    transform: translateY(-50%);
+    
+}
+
+/* Sidebar Items (Each as a Separate Block) */
+.sidebar-item {
+    /* background-color: rgba(26, 75, 41, 0.681); */
+    background-color: rgba(8, 29, 14, 0.718);
+    /* background: rgba(19, 84, 95, 0.545); */
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    /* text-align: center; */
+    width: 350px; /* Fixed width */
+    border:2px solid rgba(32, 78, 24, 0.719);
+    
+}
+
+.actions .search img{
+    width:25px;
+    height:30px;
+    gap:20px;
+}
+
+.trip-types {
+    /* background: rgba(19, 84, 95, 0.545); */
+    background-color: rgba(8, 29, 14, 0.718);
+    padding: 20px 0;
+    text-align: center;
+    width:90%;
+    margin-left: 70px;
+    border-radius:5px;
+    border:2px solid rgba(18, 49, 13, 0.593);
+}
+
+.trip-types h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.trip-buttons {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.trip-type {
+    /* background: rgba(19, 84, 95, 0.763); */
+    background-color: rgba(10, 51, 23, 0.864);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.trip-buttons .trip-type img{
+    width:50px;
+    height:50px;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Places the video behind content */
+}
+
+.destination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 0;
+    color: white; /* Adjust text color for visibility */
+}
+
+/* .destination {
+    padding: 50px 0;
+} */
+
+.destination h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.destination-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    max-width:50%;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+    transform: translateX(-180px) scale(0.8);
+    opacity: 0.5;
+}
+
+.right-arrow {
+    right: 10px;
+    transform: translateX(-180px) scale(0.8);
+    opacity: 0.5;
+}
+
+.destination-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.destination-card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.destination-info {
+    flex: 1;
+    width:300px;
+    height:200px;
+    margin-left: 301.5px;
+    margin-top: -80px;
+    position: relative;
+    z-index:20;
+    text-align: center;
+    background-color: rgba(8, 29, 14, 0.718);
+    /* background-color: rgba(12, 77, 32, 0.7); */
+    /* background: rgba(19, 84, 95, 0.545); */
+    /* backdrop-filter: blur(10px); */
+}
+.destination-info p{
+    font-size: small;
+}
+
+.content p{
+    font-size: small;
+}
+
+.discover{
+    width:400px;
+    height:50px;
+    margin-left: 260px;
+    margin-top: -400px;
+    position: relative;
+    z-index:20;
+}
+
+.destination-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.destination-info p {
+    margin-bottom: 15px;
+}
+
+.discover {
+    /* background-color: rgba(22, 79, 39, 0.864); */
+    background-color: rgba(13, 53, 25, 0.938);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top:20px;
+    font-size: 105%;
+}
+
+.discover:hover{
+    box-shadow: 6px 6px 4px #11320e;
+}
+
+/* Carousel Section */
+.carousel-section {
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+/* Carousel Container */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+/* Individual Carousel Items */
+
+
+/* Previous and Next Items */
+.carousel-item.prev {
+    transform: translateX(-180px) scale(0.8);
+    opacity: 0.5;
+}
+
+.carousel-item.next {
+    transform: translateX(180px) scale(0.8);
+    opacity: 0.5;
+}
+
+/* Navigation Buttons */
+.carousel-controls {
+    margin-top: 20px;
+}
+
+.prev-btn, .next-btn {
+    background: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: #005f79;
+}
+
+.carousel-container {
+    width: 900px; /* Ensure proper width */
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    padding:20px;
+    border-radius: 10px;
+    position: relative;
+   
+    
+  }
+  
+  .carousel-slide {
+    display: flex;
+    justify-content: center; /* Ensure items are properly placed */
+    transition: transform 0.5s ease-in-out;
+    min-width: max-content; /* Ensure all items fit inside */
+  }
+  
+  
+  .carousel-item {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 0.6;
+    transform: scale(0.8) translateX(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+  }
+  
+  /* Ensure images are properly contained */
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Active item */
+  .carousel-item.active {
+    opacity: 1;
+    transform: scale(1.2) translateX(0);
+    z-index: 2;
+    background-color: rgba(8, 29, 14, 0.718);
+    /* background-color: rgba(12, 77, 32, 0.7); */
+    /* background: rgba(19, 84, 95, 0.545); */
+    /* backdrop-filter: blur(10px); */
+    margin-bottom: 5px;
+    
+  }
+  
+  /* Previous and next items should be slightly visible */
+  .carousel-item.active + .carousel-item,
+  .carousel-item.active ~ .carousel-item {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+  
+  .carousel-item:nth-child(1),
+  .carousel-item:nth-last-child(1) {
+    transform: scale(0.8);
+  }
+  
+  
+      .carousel-nav {
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 400px;
+      }
+  
+      .carousel-nav button {
+        background: none;
+        border: none;
+        font-size: 1em;
+        cursor: pointer;
+        padding: 5px 10px;
+      }
+  
+      .carousel-dots {
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 400px;
+      }
+  
+      .carousel-dots span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+  
+      .carousel-dots span.active {
+        background-color: #333;
+      }
